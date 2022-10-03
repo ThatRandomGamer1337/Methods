@@ -22,7 +22,6 @@ namespace Methods
             health = 3;
 
             // < Enemy Point Values >
-
             int enemy1Points;
             enemy1Points = 10;
 
@@ -34,13 +33,15 @@ namespace Methods
 
 
             // < Multipliers >
-
             int doublekill;
             doublekill = 2;
 
             int triplekill;
             triplekill = 3;
 
+            // < Multipliers >
+            int healthboost;
+            healthboost = 1;
 
             // - - - - - - - - - - - - - - - - - - - - >
 
@@ -51,16 +52,25 @@ namespace Methods
             AddScore(enemy1Points, 1);
             ShowHUD();
 
-            AddScore(enemy1Points, 1);
+            AddScore(enemy2Points, 1);
             AddScore(enemy1Points, doublekill);
             ShowHUD();
 
+            DoubleKillNotif();
             DamageSystem(1);
             ShowHUD();
 
             DamageNotif();
             ShowHUD();
 
+            AddScore(enemy1Points, 1);
+            AddScore(enemy3Points, doublekill);
+            AddScore(enemy1Points, triplekill);
+            ShowHUD();
+
+            DoubleKillNotif();
+            TripleKillNotif();
+            ShowHUD();
             Console.ReadKey(true);
 
             // - Simulated Gameplay - >
@@ -92,5 +102,15 @@ namespace Methods
             score = score * multiplyer;
         }
 
+        static void DoubleKillNotif()
+        {
+            Console.WriteLine("< Double Kill! >");
+            Console.WriteLine();
+        }
+        static void TripleKillNotif()
+        {
+            Console.WriteLine("< Triple Kill! >");
+            Console.WriteLine();
+        }
     }
 }
