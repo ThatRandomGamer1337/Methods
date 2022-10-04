@@ -108,12 +108,12 @@ namespace Methods
             score = score * multiplyer;
         }
 
-        static void DoubleKillNotif() // This tells you when you get a double kill.
+        static void DoubleKillNotif() // This tells you when you get a double kill. This appears just under the HUD and (in theory) would vanish after a second.
         {
             Console.WriteLine("< Double Kill! >");
             Console.WriteLine();
         }
-        static void TripleKillNotif() // This tells you when you get a triple kill.
+        static void TripleKillNotif() // This tells you when you get a triple kill. This appears just under the HUD and (in theory) would vanish after a second.
         {
             Console.WriteLine("< Triple Kill! >");
             Console.WriteLine();
