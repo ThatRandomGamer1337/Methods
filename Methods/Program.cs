@@ -47,7 +47,7 @@ namespace Methods
 
 
 
-            // - Simulated Gameplay - >
+            // - Simulated Gameplay - v
 
             ShowHUD();
 
@@ -78,7 +78,7 @@ namespace Methods
             ShowHUD();
             Console.ReadKey(true);
 
-            // - Simulated Gameplay - >
+            // - Simulated Gameplay - ^
 
         }
         static void ShowHUD()
