@@ -83,10 +83,10 @@ namespace Methods
         }
         static void ShowHUD()
         {
-            Console.WriteLine("[=- - - - - -=]");
+            Console.WriteLine("[=- - - = - - -=]");
             Console.WriteLine("Score: " + score);    // This is the HUD itself.
             Console.WriteLine("Lives: " + health);
-            Console.WriteLine("[=- - - - - -=]");
+            Console.WriteLine("[=- - - = - - -=]");
             Console.WriteLine();
 
         }
