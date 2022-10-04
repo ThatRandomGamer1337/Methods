@@ -81,7 +81,7 @@ namespace Methods
             // - Simulated Gameplay - >
 
         }
-        static void ShowHUD() // can put stuff in here for declaration stuff and simplification.
+        static void ShowHUD()
         {
             Console.WriteLine("[=- - - - - -=]");
             Console.WriteLine("Score: " + score);    // This is the HUD itself.
@@ -98,7 +98,7 @@ namespace Methods
 
         static void DamageNotif() // This pops up whenever you take damage.
         {
-            Console.WriteLine("<> Life Lost! Watch yourself! <>");
+            Console.WriteLine("<!> Life Lost! Watch yourself! <!>");
             Console.WriteLine();
         }
 
